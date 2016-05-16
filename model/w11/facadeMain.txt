@@ -1,0 +1,7 @@
+Client -> Amplifier:amp=new()
+Client -> Tuner:tuner:new(amp)
+Client -> DvdPlayer:dvd=new(amp)
+Client -> Projector:projector=new(dvd)
+Client -> HTFacade:new(amp,tuner,dvd,projector)
+Client -> HTFacade:watchMovie()
+Client -> HTFacade:endMovie()
